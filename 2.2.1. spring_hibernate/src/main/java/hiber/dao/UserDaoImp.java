@@ -34,4 +34,13 @@ public class UserDaoImp implements UserDao {
                 .getSingleResult();
     }
 
+    @Override
+    public User findBySeries(int series) {
+        return sessionFactory.getCurrentSession()
+                .createQuery("select u from User u where u.car.series = :series", User.class)
+                .setParameter("series", series)
+                .getSingleResult();
+    }
+
+
 }
