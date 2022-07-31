@@ -6,8 +6,10 @@ import hiber.model.User;
 import hiber.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+
 import java.sql.SQLException;
 import java.util.List;
+
 
 public class MainApp {
    public static void main(String[] args) throws SQLException {
@@ -15,6 +17,7 @@ public class MainApp {
             new AnnotationConfigApplicationContext(AppConfig.class);
 
       UserService userService = context.getBean(UserService.class);
+
 
 
 
@@ -38,7 +41,8 @@ public class MainApp {
       }
 
 
-      System.out.println(userService.getUserFromCarModelAndSeries("Car2", 222));
+      System.out.println(userService.getFrom("Car2", 222));
+//      System.out.println(userService.getFrom("User1", "LastName1"));
       //Раскомментировать для проверки поиска по автомобилю, не связанному ни с один пользователем!
 //      System.out.println(userService.getUserFromCarModelAndSeries("Car3", 333));
 

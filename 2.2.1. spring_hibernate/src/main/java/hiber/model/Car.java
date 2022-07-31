@@ -1,6 +1,7 @@
 package hiber.model;
 
-import javax.persistence.*;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "cars")
@@ -17,7 +18,7 @@ public class Car {
     @Column(name = "series")
     private int series;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "usersCar")
+    @OneToOne(mappedBy = "usersCar", cascade = CascadeType.ALL)
     private User user;
 
     public Car() {

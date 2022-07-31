@@ -1,22 +1,24 @@
 package hiber.dao;
 
-import hiber.model.Car;
+
 import hiber.model.User;
-import org.hibernate.Session;
+import jakarta.persistence.NoResultException;
+import jakarta.persistence.TypedQuery;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.NoResultException;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
-public class UserDaoImp implements UserDao {
+public class UserDaoImp implements UserDao{
 
+   private  SessionFactory sessionFactory;
    @Autowired
-   private SessionFactory sessionFactory;
+   public UserDaoImp(SessionFactory sessionFactory) {
+      this.sessionFactory = sessionFactory;
+
+   }
 
    @Override
    public void add(User user) {
@@ -25,32 +27,22 @@ public class UserDaoImp implements UserDao {
 
    @Override
    @SuppressWarnings("unchecked")
-   public List<User> listUsers() {
+   public List<User> list() {
       TypedQuery<User> query=sessionFactory.getCurrentSession().createQuery("from User");
       return query.getResultList();
    }
 
-   @Override
-   public void add(Car car) {
-      sessionFactory.getCurrentSession().save(car);
-   }
+
 
    @Override
    @SuppressWarnings("unchecked")
-   public List<Car> listCars() {
-      TypedQuery<Car> query=sessionFactory.getCurrentSession().createQuery("from Car");
-      return query.getResultList();
-   }
-
-   @Override
-   @SuppressWarnings("unchecked")
-   public User getUserFromCarModelAndSeries(String model, int series) {
+   public User getFrom(String model, int series) {
       TypedQuery<User> query = null;
       try {
          query = sessionFactory.getCurrentSession().
                  createQuery("from User user where user.usersCar.model = :model and user.usersCar.series = :series");
 
-      query.setParameter("model", model).setParameter("series", series);
+         query.setParameter("model", model).setParameter("series", series);
          return query.setMaxResults(1).getSingleResult();
       }catch (NoResultException e){
          System.out.println("- - - - - - - - - - - - - - - - -");
