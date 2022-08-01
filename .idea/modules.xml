@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PP_2_2_1_spring_hibernate.iml" filepath="$PROJECT_DIR$/.idea/PP_2_2_1_spring_hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.2.1. spring_hibernate/spring-hibernate.iml" filepath="$PROJECT_DIR$/2.2.1. spring_hibernate/spring-hibernate.iml" />
+    </modules>
+  </component>
+</project>
