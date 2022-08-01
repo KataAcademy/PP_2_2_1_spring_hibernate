@@ -12,6 +12,7 @@ import java.util.List;
 
 
 public class MainApp {
+
    public static void main(String[] args) throws SQLException {
       AnnotationConfigApplicationContext context = 
             new AnnotationConfigApplicationContext(AppConfig.class);
@@ -32,6 +33,7 @@ public class MainApp {
       userService.add(user2.setUsersCar(car2).setUser(user2));
 
 
+
       List<User> users = userService.listUsers();
       for (User user : users) {
          System.out.println("-  -  -  -  -  -  -  -  -");
@@ -42,7 +44,6 @@ public class MainApp {
 
 
       System.out.println(userService.getFrom("Car2", 222));
-//      System.out.println(userService.getFrom("User1", "LastName1"));
       //Раскомментировать для проверки поиска по автомобилю, не связанному ни с один пользователем!
 //      System.out.println(userService.getUserFromCarModelAndSeries("Car3", 333));
 
