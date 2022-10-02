@@ -18,6 +18,9 @@ public class User {
 
    @Column(name = "email")
    private String email;
+   @OneToOne
+   @JoinColumn
+   private Car car;
 
    public User() {}
    
