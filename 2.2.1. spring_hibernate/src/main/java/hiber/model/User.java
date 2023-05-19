@@ -14,7 +14,7 @@ public class User {
 
    @OneToOne(mappedBy = "user")
    @Cascade(org.hibernate.annotations.CascadeType.ALL)
-   Car car;
+   private Car car;
 
    @Column(name = "name")
    private String firstName;
