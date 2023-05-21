@@ -1,16 +1,26 @@
 package hiber.model;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "car")
-public class Car implements Serializable {
-
+public class Car  {
     @Id
+
+    @Column(name = "user_id")
+    private Long id;
+
+    //...
+
     @OneToOne
-    @JoinColumn(name = "User_id", referencedColumnName = "id")
+    @MapsId
+    @JoinColumn(name = "user_id")
     private User user;
+
+
     @Column(name = "model")
     private String model;
     @Column(name = "serial")
@@ -59,4 +69,11 @@ public class Car implements Serializable {
     }
 
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
