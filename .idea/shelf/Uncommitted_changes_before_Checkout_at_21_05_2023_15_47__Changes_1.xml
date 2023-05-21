@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_21_05_2023_15_47_[Changes]1" date="1684673246901" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_05_2023_15_47_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 21.05.2023 15:47 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="2.2.1. spring_hibernate/target/classes/hiber/model/Car.class" />
+    <option name="AFTER_PATH" value="2.2.1. spring_hibernate/target/classes/hiber/model/Car.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_05_2023_15_47_[Changes]1/Car.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="2.2.1. spring_hibernate/target/classes/hiber/model/User.class" />
+    <option name="AFTER_PATH" value="2.2.1. spring_hibernate/target/classes/hiber/model/User.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_05_2023_15_47_[Changes]1/User.class" />
+  </binary>
+</changelist>
