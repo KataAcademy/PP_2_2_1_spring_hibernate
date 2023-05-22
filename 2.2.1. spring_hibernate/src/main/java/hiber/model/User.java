@@ -13,7 +13,16 @@ public class User {
     @Column(name = "id")
     private Long id;
 
-    //...
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", car=" + car +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn

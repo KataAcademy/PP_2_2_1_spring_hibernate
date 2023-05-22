@@ -57,17 +57,13 @@ public class Car  {
         this.serial = serial;
     }
 
-
-
     @Override
     public String toString() {
         return "Car{" +
-                "user=" + user +
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", serial=" + serial +
                 '}';
     }
-
 
     public void setId(Long id) {
         this.id = id;
