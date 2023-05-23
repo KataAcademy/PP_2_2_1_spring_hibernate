@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d497f3-f9ec-4211-9ed4-fd8879e64d2b" name="Changes" comment="21.05 16:40">
+    <list default="true" id="01d497f3-f9ec-4211-9ed4-fd8879e64d2b" name="Changes" comment="23.05.23 1:40">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/dao/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/src/main/java/hiber/service/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/dao/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/dao/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/service/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.1. spring_hibernate/target/classes/hiber/service/UserServiceImp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +35,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Dva" />
+        <entry key="$PROJECT_DIR$" value="ReservComplete" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,6 +115,7 @@
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.MainApp" />
+        <item itemvalue="Application.MainApp" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +131,7 @@
       <workItem from="1684433827417" duration="822000" />
       <workItem from="1684435420941" duration="6919000" />
       <workItem from="1684772188390" duration="7240000" />
-      <workItem from="1684794592752" duration="645000" />
+      <workItem from="1684794592752" duration="2115000" />
     </task>
     <task id="LOCAL-00001" summary="One">
       <created>1684337646015</created>
@@ -178,11 +168,29 @@
       <option name="project" value="LOCAL" />
       <updated>1684676438467</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="23.05.23 1:40">
+      <created>1684795267656</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684795267656</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -190,6 +198,7 @@
     <MESSAGE value="Two?" />
     <MESSAGE value="3" />
     <MESSAGE value="21.05 16:40" />
-    <option name="LAST_COMMIT_MESSAGE" value="21.05 16:40" />
+    <MESSAGE value="23.05.23 1:40" />
+    <option name="LAST_COMMIT_MESSAGE" value="23.05.23 1:40" />
   </component>
 </project>
