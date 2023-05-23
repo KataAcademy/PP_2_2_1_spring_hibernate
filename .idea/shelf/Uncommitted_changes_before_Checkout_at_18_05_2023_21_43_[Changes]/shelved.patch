@@ -1,0 +1,35 @@
+Index: 2.2.1. spring_hibernate/src/main/java/hiber/model/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package hiber.model;\r\n\r\nimport org.hibernate.annotations.Cascade;\r\n\r\nimport javax.persistence.*;\r\n\r\n@Entity\r\n@Table(name = \"users\")\r\npublic class User {\r\n\r\n   @OneToOne (mappedBy = \"user\")\r\n   @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)\r\n   private Car car;\r\n\r\n\r\n   public User(String firstName, String lastName, String email, Car car) {\r\n      this.car = car;\r\n      car.setUser(this);\r\n      this.firstName = firstName;\r\n      this.lastName = lastName;\r\n      this.email = email;\r\n   }\r\n\r\n   public Car getCar() {\r\n      return car;\r\n   }\r\n\r\n   public void setCar(Car car) {\r\n      this.car = car;\r\n   }\r\n\r\n   @Id\r\n   @GeneratedValue(strategy = GenerationType.IDENTITY)\r\n   private Long id;\r\n\r\n   @Column(name = \"name\")\r\n   private String firstName;\r\n\r\n   @Column(name = \"last_name\")\r\n   private String lastName;\r\n\r\n   @Column(name = \"email\")\r\n   private String email;\r\n\r\n   public User() {}\r\n\r\n   @Override\r\n   public String toString() {\r\n      return \"User{\" +\r\n              \"car=\" + car +\r\n              \", id=\" + id +\r\n              \", firstName='\" + firstName + '\\'' +\r\n              \", lastName='\" + lastName + '\\'' +\r\n              \", email='\" + email + '\\'' +\r\n              '}';\r\n   }\r\n\r\n   public Long getId() {\r\n      return id;\r\n   }\r\n\r\n   public void setId(Long id) {\r\n      this.id = id;\r\n   }\r\n\r\n   public String getFirstName() {\r\n      return firstName;\r\n   }\r\n\r\n   public void setFirstName(String firstName) {\r\n      this.firstName = firstName;\r\n   }\r\n\r\n   public String getLastName() {\r\n      return lastName;\r\n   }\r\n\r\n   public void setLastName(String lastName) {\r\n      this.lastName = lastName;\r\n   }\r\n\r\n   public String getEmail() {\r\n      return email;\r\n   }\r\n\r\n   public void setEmail(String email) {\r\n      this.email = email;\r\n   }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/2.2.1. spring_hibernate/src/main/java/hiber/model/User.java b/2.2.1. spring_hibernate/src/main/java/hiber/model/User.java
+--- a/2.2.1. spring_hibernate/src/main/java/hiber/model/User.java	
++++ b/2.2.1. spring_hibernate/src/main/java/hiber/model/User.java	
+@@ -44,6 +44,7 @@
+ 
+    public User() {}
+ 
++
+    @Override
+    public String toString() {
+       return "User{" +
+Index: 2.2.1. spring_hibernate/src/main/java/hiber/service/UserService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package hiber.service;\r\n\r\nimport hiber.model.Car;\r\nimport hiber.model.User;\r\n\r\nimport java.util.List;\r\n\r\npublic interface UserService {\r\n    void add(User user);\r\n    List<User> listUsers();\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/2.2.1. spring_hibernate/src/main/java/hiber/service/UserService.java b/2.2.1. spring_hibernate/src/main/java/hiber/service/UserService.java
+--- a/2.2.1. spring_hibernate/src/main/java/hiber/service/UserService.java	
++++ b/2.2.1. spring_hibernate/src/main/java/hiber/service/UserService.java	
+@@ -9,5 +9,5 @@
+     void add(User user);
+     List<User> listUsers();
+ 
+-
++    User getUserByCar(String model, int serial);
+ }
